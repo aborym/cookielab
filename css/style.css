@@ -1,0 +1,200 @@
+/* @group reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* @end */
+
+@-webkit-keyframes flicker {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.69;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: .6; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: .6; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+html {
+	background-color: black;
+}
+html body {
+	font: 12px/1.6 "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, Verdana;
+	-webkit-font-smoothing: antialiased;
+}
+
+#wrapper {
+	background-image: -webkit-gradient(radial, 50% -30%, 0, 50% -30%, 550, from( rgba(176, 179, 149, 1) ), to(black));
+	background-size: 100% 100%;
+	background-position: top center;
+	opacity: 0.75;
+	-webkit-animation-name: flicker;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	height: 600px;
+	overflow: hidden;
+	width:  100%;
+	position: absolute;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+@-moz-document url-prefix() {
+    div#wrapper {
+        color: white;
+        opacity: 1;
+    }
+    
+    
+}
+
+#wrapper h1 {
+	font-size: 3em;
+	margin-top: 120px;
+	/*text-transform: uppercase;*/
+	text-shadow: 0 2px rgba(0, 0, 0, 1);
+}
+
+#wrapper p {
+	font-family: "Monotype Corsiva", cursive;
+	font-size: 2em;
+	margin-top: -15px;
+	text-shadow: black 0 -1px;
+}
+
+
+a, a:visited {
+	
+}
+
+a:hover, a:active {
+	
+}
+
+
